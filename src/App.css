@@ -1,0 +1,34 @@
+@import '../src/css-reset.css';
+
+
+/* variables */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+section {
+}
+
+article {
+    background-color: grey;
+}
