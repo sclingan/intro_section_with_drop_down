@@ -1,11 +1,17 @@
-import logo from '../public/images/logo.svg'
+import logo from '/images/logo.svg'
+import icon_close from '/images/icon-close-menu.svg'
+import icon_menu from '/images/icon-menu.svg'
 
 function Header() {
 
     return (
         <header>
+            <div>
             <img src={logo} alt=''></img>
-            <nav>
+            <img src={icon_menu} alt=''></img>
+            </div>
+            <nav className='nav'>
+                <img src={icon_close} alt=''></img>
                 <ul>
                     <li>Features</li>
                     <li>Company</li>

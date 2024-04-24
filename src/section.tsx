@@ -1,9 +1,14 @@
-import hero from '../public/images/image-hero-mobile.png'
+import hero from '/images/image-hero-mobile.png'
+import heroDesktop from '/images/image-hero-desktop.png'
+
 function Section() {
 
     return (
         <section>
-          <img src={hero} alt=''></img>
+          <picture>
+            <source srcSet={hero} media="(max-width: 50rem)"/>
+            <img src={heroDesktop} alt=""></img>
+          </picture>
         </section>
      
     )
