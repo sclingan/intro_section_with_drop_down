@@ -18,17 +18,40 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: orange;
     min-height: 80%;
-    padding-right: 8rem;
+    /* padding-right: 8rem; */
+    min-width: 15rem;
+    background-color: white;
+    padding-block: 1rem;
+}
+
+.icon-close {
+    position: relative;
+    left: 12rem;
 }
 
 ul {
     list-style-type: none;
+    padding-block: 1rem;
 }
 
 li {
-    /* display: inline-block; */
+    padding-block: 0.5rem;
+}
+
+summary {
+    display: inline-block;
+}
+
+.details_open {
+    position: relative;
+    top: -0.9rem;
+    left: 4.4rem;
+}
+
+.features {
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 section {

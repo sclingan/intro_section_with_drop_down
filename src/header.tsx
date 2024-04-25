@@ -1,6 +1,11 @@
 import logo from '/images/logo.svg'
 import icon_close from '/images/icon-close-menu.svg'
 import icon_menu from '/images/icon-menu.svg'
+import arrow_down from '/images/icon-arrow-down.svg'
+import icon_todo from '/images/icon-todo.svg'
+import icon_calendar from '/images/icon-calendar.svg'
+import icon_reminders from '/images/icon-reminders.svg'
+import icon_planning from '/images/icon-planning.svg'
 
 function Header() {
 
@@ -11,10 +16,29 @@ function Header() {
             <img src={icon_menu} alt=''></img>
             </div>
             <nav className='nav'>
-                <img src={icon_close} alt=''></img>
+                <img src={icon_close} alt='' className='icon-close'></img>
                 <ul>
-                    <li>Features</li>
-                    <li>Company</li>
+                    <li><details>
+                        <summary>Features<img src={arrow_down} alt='' className='details_open'></img></summary>
+                        <ul className='features'>
+                            <li><img src={icon_todo} alt=''></img></li>
+                            <li>Todo List</li>
+                            <li><img src={icon_calendar} alt=''></img></li>
+                            <li>Calendar</li>
+                            <li><img src={icon_reminders} alt=''></img></li>
+                            <li>Reminders</li>
+                            <li><img src={icon_planning} alt=''></img></li>
+                            <li>Planning</li>
+                        </ul>
+                        </details></li>
+                    <li><details>
+                        <summary>Company<img src={arrow_down} alt='' className='details_open'></img></summary>
+                        <ul>
+                            <li>History</li>
+                            <li>Our Team</li>
+                            <li>Blog</li>
+                        </ul>
+                        </details></li>
                     <li>Careers</li>
                     <li>About</li>
                     <li>Login</li>
