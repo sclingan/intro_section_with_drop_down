@@ -19,7 +19,6 @@ header {
     top: 0;
     right: 0;
     min-height: 80%;
-    /* padding-right: 8rem; */
     min-width: 15rem;
     background-color: white;
     padding-block: 1rem;
@@ -33,6 +32,7 @@ header {
 ul {
     list-style-type: none;
     padding-block: 1rem;
+    padding-left: 1.5rem;
 }
 
 li {
@@ -49,9 +49,32 @@ summary {
     left: 4.4rem;
 }
 
-.features {
-    /* display: flex; */
-    /* flex-direction: column; */
+.features > li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.features > li > img {
+    flex-shrink: 0;
+    min-width: 1.3rem; /* fix this */
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.register {
+    background-color: transparent;
+    border: 0.12rem solid black;
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    min-width: 80%;
+    cursor: pointer;
 }
 
 section {

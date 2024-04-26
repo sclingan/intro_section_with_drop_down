@@ -21,14 +21,10 @@ function Header() {
                     <li><details>
                         <summary>Features<img src={arrow_down} alt='' className='details_open'></img></summary>
                         <ul className='features'>
-                            <li><img src={icon_todo} alt=''></img></li>
-                            <li>Todo List</li>
-                            <li><img src={icon_calendar} alt=''></img></li>
-                            <li>Calendar</li>
-                            <li><img src={icon_reminders} alt=''></img></li>
-                            <li>Reminders</li>
-                            <li><img src={icon_planning} alt=''></img></li>
-                            <li>Planning</li>
+                            <li><img src={icon_todo} alt=''></img>Todo List</li>
+                            <li><img src={icon_calendar} alt=''></img>Calendar</li>
+                            <li><img src={icon_reminders} alt=''></img>Reminders</li>
+                            <li><img src={icon_planning} alt=''></img>Planning</li>
                         </ul>
                         </details></li>
                     <li><details>
@@ -41,9 +37,11 @@ function Header() {
                         </details></li>
                     <li>Careers</li>
                     <li>About</li>
-                    <li>Login</li>
-                    <li><button>Register</button></li>
                 </ul>
+                <div className='nav-footer'>
+                <p>Login</p>
+                <button className='register'>Register</button>
+                </div>
             </nav>
         </header>
   
