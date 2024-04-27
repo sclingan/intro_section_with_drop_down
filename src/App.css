@@ -2,31 +2,74 @@
 
 
 /* variables */
+:root {
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+    --font-size: 1.125rem;
+    --ff: 'Epilogue';
+    --fw: 500;
+    --fw-700: 700;
+}
+
+/* TODO:
+     fix nav icon sizes
+     fix arrow icons
+
+
+
+*/
 
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: var(--font-size);
+    font-family: var(--ff);
+    font-weight: var(--fw);
+    background-color: var(--white);
+    color: var(--black);
 }
-
 
 header {
  
+}
+
+.div_logo {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+
+.icon_menu {
+    max-height: 1rem;
 }
 
 .nav {
     position: absolute;
     top: 0;
     right: 0;
-    min-height: 80%;
+    min-height: 95%;
     min-width: 15rem;
     background-color: white;
     padding-block: 1rem;
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
 .icon-close {
     position: relative;
     left: 12rem;
+    cursor: pointer;
 }
 
 ul {
@@ -57,7 +100,7 @@ summary {
 
 .features > li > img {
     flex-shrink: 0;
-    min-width: 1.3rem; /* fix this */
+    min-width: 1.5rem;
 }
 
 .nav-footer {
@@ -69,7 +112,7 @@ summary {
 
 .register {
     background-color: transparent;
-    border: 0.12rem solid black;
+    border: 0.12rem solid var(--black);
     border-radius: 0.5rem;
     padding-block: 0.5rem;
     padding-inline: 1rem;
@@ -78,8 +121,45 @@ summary {
 }
 
 section {
+    padding-block: 0.5rem;
 }
 
 article {
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+h2 {
+    padding-block: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: var(--fw-700);
+}
+
+p {
+    padding-block: 0.5rem;
+    text-align: center;
+}
+
+.learn_more {
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin-block: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer_logo {
+    max-width: 18%;
 }

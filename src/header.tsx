@@ -9,14 +9,26 @@ import icon_planning from '/images/icon-planning.svg'
 
 function Header() {
 
+    function open_close_Nav() {
+        const icon = document.getElementById('nav')!;
+        if(icon.className === 'nav') {
+            console.log('nav')
+            icon.classList.remove('nav');
+            icon.classList.add('visually-hidden');
+        }else{
+            icon.classList.remove('visually-hidden');
+            icon.classList.add('nav');
+        }
+    }
+
     return (
         <header>
-            <div>
+            <div className='div_logo'>
             <img src={logo} alt=''></img>
-            <img src={icon_menu} alt=''></img>
+            <img src={icon_menu} alt='' onClick={open_close_Nav} className='icon_menu'></img>
             </div>
-            <nav className='nav'>
-                <img src={icon_close} alt='' className='icon-close'></img>
+            <nav className='visually-hidden' id='nav'>
+                <img src={icon_close} alt='' className='icon-close' id='icon-close' onClick={open_close_Nav}></img>
                 <ul>
                     <li><details>
                         <summary>Features<img src={arrow_down} alt='' className='details_open'></img></summary>

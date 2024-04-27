@@ -6,7 +6,7 @@ function Article() {
       <h2>Make remote work</h2>
       <p> Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.</p>
-          <button>Learn more</button>
+          <button className="learn_more">Learn more</button>
     </article>
  
   )
