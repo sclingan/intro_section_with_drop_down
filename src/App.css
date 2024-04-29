@@ -14,7 +14,8 @@
 
 /* TODO:
      fix nav icon sizes
-     fix arrow icons
+     fix blur and darken background on open nav
+     fix arrow up/down on arrow2
 
 
 
@@ -28,6 +29,16 @@ main {
     font-weight: var(--fw);
     background-color: var(--white);
     color: var(--black);
+}
+
+.blur {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+    font-family: var(--ff);
+    font-weight: var(--fw);
+    /* background-color: black; */
+    /* filter: blur(8px); */
 }
 
 header {
@@ -88,8 +99,15 @@ summary {
 
 .details_open {
     position: relative;
-    top: -0.9rem;
-    left: 4.4rem;
+    top: -1rem;
+    left: 6rem;
+}
+
+.details_close {
+    position: relative;
+    top: -1rem;
+    left: 6rem;
+    transform: rotate(180deg);
 }
 
 .features > li {

@@ -7,7 +7,7 @@ import Footer from '../src/footer'
 function App() {
 
   return (
-    <main>
+    <main id='main'>
      <Header />
      <Section />
      <Article />
