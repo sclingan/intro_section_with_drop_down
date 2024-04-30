@@ -23,14 +23,23 @@ function Header() {
         }
     }
 
-    function rotate() {
+    function rotate(e: MouseEvent) {
+        const target = e?.target?.id;
         const arrow = document.getElementById('arrow')!;
-        if(arrow.className === 'details_open') {
-            arrow.classList.remove('details_open');
-            arrow.classList.add('details_close');
+        const arrow2 = document.getElementById('arrow2')!;
+        let  element;
+        if(target === 'arrow2') {
+            element = arrow2;
         }else{
-            arrow.classList.remove('details_close');
-            arrow.classList.add('details_open');
+            element = arrow;
+        }
+
+        if(element.className === 'details_open') {
+            element.classList.remove('details_open');
+            element.classList.add('details_close');
+        }else{
+            element.classList.remove('details_close');
+            element.classList.add('details_open');
         }
     }
 
@@ -53,7 +62,7 @@ function Header() {
                         </ul>
                         </details></li>
                     <li><details>
-                        <summary>Company<img src={arrow_down} alt='' className='details_open' id='arrow2'></img></summary>
+                        <summary>Company<img src={arrow_down} alt='' className='details_open' id='arrow2' onClick={rotate}></img></summary>
                         <ul>
                             <li>History</li>
                             <li>Our Team</li>
