@@ -6,6 +6,7 @@ import icon_todo from '/images/icon-todo.svg'
 import icon_calendar from '/images/icon-calendar.svg'
 import icon_reminders from '/images/icon-reminders.svg'
 import icon_planning from '/images/icon-planning.svg'
+import { MouseEventHandler } from 'react'
 
 function Header() {
 
@@ -23,7 +24,7 @@ function Header() {
         }
     }
 
-    function rotate(e: MouseEvent) {
+    function rotate(e) {
         const target = e?.target?.id;
         const arrow = document.getElementById('arrow')!;
         const arrow2 = document.getElementById('arrow2')!;
@@ -73,7 +74,7 @@ function Header() {
                     <li>About</li>
                 </ul>
                 <div className='nav-footer'>
-                <p>Login</p>
+                <p className='login'>Login</p>
                 <button className='register'>Register</button>
                 </div>
             </nav>
