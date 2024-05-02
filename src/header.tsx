@@ -6,7 +6,6 @@ import icon_todo from '/images/icon-todo.svg'
 import icon_calendar from '/images/icon-calendar.svg'
 import icon_reminders from '/images/icon-reminders.svg'
 import icon_planning from '/images/icon-planning.svg'
-import { MouseEventHandler } from 'react'
 
 function Header() {
 
