@@ -9,18 +9,6 @@ import icon_planning from '/images/icon-planning.svg'
 
 function Header() {
 
-    const mediaQuery = window.matchMedia("(min-width: 50rem)");
-
-    function changeNav(e){
-        if(e.matches){
-        const nav = document.getElementById('nav');
-        nav?.classList.remove('visually-hidden')
-        nav?.classList.add('inline_nav');
-        }
-    }
-    /* make this so it checks onload not just onchange */
-    mediaQuery.addEventListener("change", changeNav);
-
     function open_close_Nav() {
         const icon = document.getElementById('nav')!;
         // const main = document.getElementById('main')!;

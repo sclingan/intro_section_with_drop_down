@@ -206,12 +206,44 @@ footer {
 
     header {
         grid-column: 1/3;
+        grid-row: 1/1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
     }
+    /* Not sure if this is the best way
+       to do this(changing a class) but 
+       seemed easier than using JS */
+    .visually-hidden {
+        display: flex;
+        flex-direction: row;
+        clip-path: none;
+        height: auto;
+        overflow: visible;
+        position: relative;
+        /* top: -4.3rem; */
+   }
 
-    .inline_nav {
-        display: inline;
-        background-color: orange;
-    }
+   .icon-close {
+    display: none;
+   }
+
+   ul {
+    display: flex;
+    gap: 3rem;
+   }
+
+   li {
+    /* display: inline-block; */
+   }
+
+   .nav-footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 4rem;
+    gap: 4rem;
+   }
 
     section {
         grid-column: 2/3;
@@ -221,9 +253,12 @@ footer {
         grid-column: 1/1;
         grid-row: 2/2;
         justify-content: center;
-        /* padding-left: 3rem; */
-        /* margin-left: 5rem; */
-        /* max-width: 57%; */
+        align-items: self-start;
+        padding-inline: 2rem;
+    }
+
+    article > p {
+        text-align: left;
     }
 
     h2 {
@@ -232,6 +267,12 @@ footer {
 
     .icon_menu {
         display: none;
+    }
+
+    footer {
+        grid-column: 1/1;
+        /* grid-row: 2/3; */
+        /* padding-top: 45rem; */
     }
 
 }
