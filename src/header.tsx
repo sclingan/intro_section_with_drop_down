@@ -63,7 +63,7 @@ function Header() {
                         </details></li>
                     <li><details>
                         <summary>Company<img src={arrow_down} alt='' className='details_open' id='arrow2' onClick={rotate}></img></summary>
-                        <ul>
+                        <ul className='company'>
                             <li>History</li>
                             <li>Our Team</li>
                             <li>Blog</li>
