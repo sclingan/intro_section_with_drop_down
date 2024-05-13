@@ -218,10 +218,12 @@ footer {
     .visually-hidden {
         display: flex;
         flex-direction: row;
+        flex-grow: 1;
         clip-path: none;
         height: auto;
         overflow: visible;
         position: relative;
+        justify-content: space-between;
    }
 
    .icon-close {
@@ -236,9 +238,8 @@ footer {
    .nav-footer {
     flex-direction: row;
     padding-bottom: 0.2rem;
+    padding-right: 3rem;
     gap: 4rem;
-    /* padding-left: 35vw; */
-    padding-left: calc(35vw - 10vw);
    }
 
     section {
@@ -290,8 +291,27 @@ footer {
 
     footer {
         grid-column: 1/1;
-        /* grid-row: 2/3; */
-        /* padding-top: 45rem; */
     }
 
+}
+
+
+/* Fix layout between 800px and 950px */
+@media(min-width: 800px) {
+
+    .nav-footer {
+        padding-left: 2rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+}
+
+@media(min-width: 950px) {
+
+    .nav-footer {
+        gap: 4rem;
+        flex-wrap: nowrap;
+        padding-top: 0;
+    }
 }
