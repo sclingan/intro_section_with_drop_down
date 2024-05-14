@@ -11,15 +11,15 @@ function Header() {
 
     function open_close_Nav() {
         const icon = document.getElementById('nav')!;
-        // const main = document.getElementById('main')!;
+        const main = document.getElementById('main')!;
         if(icon.className === 'nav') {
             icon.classList.remove('nav');
             icon.classList.add('visually-hidden');
         }else{
             icon.classList.remove('visually-hidden');
             icon.classList.add('nav');
-            // main.classList.add('blur');
-            // main.classList.remove('main');
+            main.classList.add('blur');
+            main.classList.remove('main');
         }
     }
 
