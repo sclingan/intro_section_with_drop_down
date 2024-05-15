@@ -15,6 +15,7 @@ function Header() {
         if(icon.className === 'nav') {
             icon.classList.remove('nav');
             icon.classList.add('visually-hidden');
+            main.classList.remove('blur');
         }else{
             icon.classList.remove('visually-hidden');
             icon.classList.add('nav');
