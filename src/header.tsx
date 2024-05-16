@@ -24,8 +24,9 @@ function Header() {
         }
     }
 
-    function rotate(e) {
-        const target = e?.target?.id;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    function rotate(e: any) {
+        const target = e?.target!.id;
         const arrow = document.getElementById('arrow')!;
         const arrow2 = document.getElementById('arrow2')!;
         let  element;
