@@ -47,6 +47,7 @@ function Header() {
 
     return (
         <header>
+            <h1 className='sr-only'>Intro section with drop down</h1>
             <div className='div_logo'>
             <img src={logo} alt=''></img>
             <img src={icon_menu} alt='' onClick={open_close_Nav} className='icon_menu'></img>

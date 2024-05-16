@@ -30,10 +30,6 @@ main {
     font-weight: var(--fw);
 }
 
-header {
- 
-}
-
 .div_logo {
     padding-block: 1rem;
     display: flex;
@@ -187,7 +183,6 @@ footer {
 
 .blur {
     background-color: black;
-    /* filter: blur(10px); */
 }
 
 .blur > section {
@@ -197,6 +192,15 @@ footer {
 .blur > article  {
     filter: blur(10px);
 }
+
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
 
 @media(min-width: 50rem) {
 
